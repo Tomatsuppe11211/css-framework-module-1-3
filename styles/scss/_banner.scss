@@ -1,0 +1,38 @@
+
+$background: #fff082;
+$text: #333;
+$close_hover: #e85a4f;
+$down: 1rem;
+
+
+
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0){
+    padding: $top $right $bottom $left;
+}
+
+@mixin rounded($radius){
+    border-radius: $radius;
+}
+
+
+.banner{
+    @include padding(16px, 24px);
+    @include rounded(6px);
+
+    background: $background;
+    color: $text;
+    margin-bottom: $down;
+
+    strong{
+        font-weight: bold;
+    }
+
+    .close{
+        float: right;
+        cursor: pointer;
+
+        &:hover{
+            color: $close_hover;
+        }
+    }
+}
