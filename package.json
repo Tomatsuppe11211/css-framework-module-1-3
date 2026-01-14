@@ -1,0 +1,24 @@
+{
+  "name": "css-framework-module-1-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass styles/scss:styles/css --style compressed",
+    "watch": "sass styles/scss:styles/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomatsuppe11211/css-framework-module-1-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomatsuppe11211/css-framework-module-1-3/issues"
+  },
+  "homepage": "https://github.com/Tomatsuppe11211/css-framework-module-1-3#readme",
+  "devDependencies": {
+    "sass": "^1.97.2"
+  }
+}
