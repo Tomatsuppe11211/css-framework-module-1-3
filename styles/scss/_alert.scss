@@ -1,0 +1,38 @@
+
+//setting maps
+$colors: (
+    "success": #2bff00,
+    "Error": #fb5939,
+    "warning": #ffc227,
+    "info":  #26d0ff 
+);
+
+$fonts: (
+    "sans-serif": "Arial, sans-serif",
+    "serif": "Georgia, seriff"
+);
+
+
+//Setting variables
+$y: 5rem;
+$x: 1rem;
+
+@mixin padding($top: 0, $right: 0, $down: 0, $left: 0){
+    padding: $top $right $down $left;
+}
+
+//Styling and nesting
+.alerts{
+    margin-top: $y;
+
+    div{
+        height: $y;
+        border: solid black;
+        line-height: $y;
+    }
+
+    p, i, button{
+        font-size: 20px;
+        @include padding(0, $x, 0, $x);
+    }
+}

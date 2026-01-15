@@ -53,4 +53,17 @@
   background: hsl(0, 0%, -3.3333333333%);
 }
 
+.alerts {
+  margin-top: 5rem;
+}
+.alerts div {
+  height: 5rem;
+  border: solid black;
+  line-height: 5rem;
+}
+.alerts p, .alerts i, .alerts button {
+  font-size: 20px;
+  padding: 0 1rem 0 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
