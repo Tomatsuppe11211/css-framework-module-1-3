@@ -1,4 +1,62 @@
+@use "sass:color";
 
-$background: #2d2d2d;
-$text: #fff;
-$border: #cc00ff;   
+//Setting up variables
+$background: #111 ;
+$text: #ff2a00;
+$border: #f8f23a;
+$shadow: #ff5000;
+$down: 2rem;
+
+
+//Setting up mixins
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0){
+    padding: $top $right $bottom $left;
+}
+
+@mixin rounded($radius){
+    border-radius: $radius;
+}
+
+@mixin card-shadow{
+    box-shadow: 0 4px 8px $shadow;
+}
+
+
+//Styling and nesting
+.profile-card{
+    background: $background;
+    color: $text;
+    font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+
+    h1{font-family: "Impact", "Arial Black", sans-serif;}
+
+
+    img{
+        @include rounded(100%);
+        border: solid $border;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    img, button{@include card-shadow;}
+
+    .details, button{margin-top: $down;}
+
+    button, p{font-size: 20px;}
+
+    button{
+        background: $shadow;
+        margin-bottom: $down;
+        @include rounded(20px);
+
+        &:hover{
+            color: $border;
+            font-weight: bold;
+            border: solid $shadow;
+        }
+    }
+
+    &:hover{
+        background: color.adjust($background, $lightness: -10%);
+    }
+}

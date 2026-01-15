@@ -16,4 +16,41 @@
   color: #e85a4f;
 }
 
+.profile-card {
+  background: #111;
+  color: #ff2a00;
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+}
+.profile-card h1 {
+  font-family: "Impact", "Arial Black", sans-serif;
+}
+.profile-card img {
+  border-radius: 100%;
+  border: solid #f8f23a;
+  height: 15rem;
+  width: 15rem;
+}
+.profile-card img, .profile-card button {
+  box-shadow: 0 4px 8px #ff5000;
+}
+.profile-card .details, .profile-card button {
+  margin-top: 2rem;
+}
+.profile-card button, .profile-card p {
+  font-size: 20px;
+}
+.profile-card button {
+  background: #ff5000;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+.profile-card button:hover {
+  color: #f8f23a;
+  font-weight: bold;
+  border: solid #ff5000;
+}
+.profile-card:hover {
+  background: hsl(0, 0%, -3.3333333333%);
+}
+
 /*# sourceMappingURL=styles.css.map */
