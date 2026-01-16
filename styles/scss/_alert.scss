@@ -30,7 +30,7 @@ $x: 1rem;
     margin-top: $y;
 
     div{
-        border: solid black;
+        border: solid map.get($colors, "border");
         margin-top: $x;
         @include padding(1rem, 0, 1rem, 0);
     }
