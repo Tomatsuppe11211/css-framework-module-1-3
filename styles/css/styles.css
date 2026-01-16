@@ -57,12 +57,38 @@
   margin-top: 5rem;
 }
 .alerts div {
-  height: 5rem;
   border: solid black;
-  line-height: 5rem;
+  margin-top: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+.alerts .success {
+  background: #2bff00;
+}
+.alerts .success:hover {
+  background: rgb(85.4, 255, 51);
+}
+.alerts .error {
+  background: #f76539;
+}
+.alerts .error:hover {
+  background: rgb(248.9805825243, 139.1262135922, 106.0194174757);
+}
+.alerts .warning {
+  background: #ffc227;
+}
+.alerts .warning:hover {
+  background: rgb(255, 208.4027777778, 90);
+}
+.alerts .info {
+  background: #26d0ff;
+}
+.alerts .info:hover {
+  background: rgb(89, 219.0460829493, 255);
 }
 .alerts p, .alerts i, .alerts button {
   font-size: 20px;
+}
+.alerts p, .alerts i {
   padding: 0 1rem 0 1rem;
 }
 

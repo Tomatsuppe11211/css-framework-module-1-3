@@ -1,10 +1,14 @@
 
-//setting maps
+@use "sass:map";
+@use "sass:color";
+
+
 $colors: (
     "success": #2bff00,
-    "Error": #fb5939,
+    "error": #f76539,
     "warning": #ffc227,
-    "info":  #26d0ff 
+    "info":  #26d0ff,
+    "border": #000 
 );
 
 $fonts: (
@@ -26,13 +30,44 @@ $x: 1rem;
     margin-top: $y;
 
     div{
-        height: $y;
         border: solid black;
-        line-height: $y;
+        margin-top: $x;
+        @include padding(1rem, 0, 1rem, 0);
     }
 
-    p, i, button{
-        font-size: 20px;
-        @include padding(0, $x, 0, $x);
+    .success{
+        background: map.get($colors, "success");
+
+        &:hover{
+            background: color.adjust(map.get($colors, "success"), $lightness: 10%);
+        }
     }
+
+    .error{
+        background: map.get($colors, "error");
+
+        &:hover{
+            background: color.adjust(map.get($colors, "error"), $lightness: 10%);
+        }
+    }
+
+    .warning{
+        background: map.get($colors, "warning");
+
+        &:hover{
+            background: color.adjust(map.get($colors, "warning"), $lightness: 10%);
+        }
+    }
+
+    .info{
+        background: map.get($colors, "info");
+
+        &:hover{
+            background: color.adjust(map.get($colors, "info"), $lightness: 10%);
+        }
+    }
+
+    p, i, button{font-size: 20px;}
+
+    p, i{@include padding(0, 1rem, 0, 1rem)}
 }
