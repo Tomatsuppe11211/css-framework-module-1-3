@@ -92,4 +92,46 @@
   padding: 0 1rem 0 1rem;
 }
 
+.badges {
+  margin-top: 5rem;
+}
+.badges div {
+  width: fit-content;
+  font-weight: bold;
+  color: #fff;
+  height: fit-content;
+}
+.badges .sizes div {
+  margin: 0 1rem 0 1rem;
+}
+.badges .smbg {
+  height: 2rem;
+  width: 5rem;
+  background: #008cff;
+  font-size: 16px;
+  border-radius: 2rem;
+}
+.badges .mdbg {
+  height: 3rem;
+  width: 7rem;
+  background: #f717ff;
+  font-size: 20px;
+  border-radius: 3rem;
+}
+.badges .lgbg {
+  height: 3rem;
+  width: 7.5rem;
+  background: #ff3e3e;
+  font-size: 25px;
+  border-radius: 4rem;
+}
+.badges .noti {
+  background: #ffc13c;
+  font-size: 20px;
+}
+.badges .count {
+  background: #ff3e3e;
+  border-radius: 30%;
+}
+
 /*# sourceMappingURL=styles.css.map */

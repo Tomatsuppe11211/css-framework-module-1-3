@@ -1,0 +1,82 @@
+@use "sass:map";
+@use "sass:color";
+
+$spacing: (
+    "section": 5rem,
+    "marlef": 2rem,
+);
+    
+$colors: (
+    "sm": #008cff,
+    "md": #f717ff,
+    "lg": #ff3e3e,
+    "noti": #ffc13c
+);
+
+$sizes: (
+    "sm": 16px,
+    "md": 20px,
+    "lg": 25px
+);
+
+
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0){
+    padding: $top $right $bottom $left;
+}
+
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0){
+    margin: $top $right $bottom $left;
+}
+
+@mixin rounded($radius){
+    border-radius: $radius;
+}
+
+.badges{
+    margin-top: map.get($spacing, "section");
+
+    div{
+        width: fit-content;
+        font-weight: bold;
+        color: #fff;
+        height: fit-content;
+    }
+
+    .sizes div{
+        @include margin(0, 1rem, 0, 1rem)
+    }
+
+    .smbg{
+        height: 2rem;
+        width: 5rem;
+        background: map.get($colors, "sm");
+        font-size: map.get($sizes, "sm");
+        @include rounded(2rem);
+    }
+
+    .mdbg{
+        height: 3rem;
+        width: 7rem;
+        background: map.get($colors, "md");
+        font-size: map.get($sizes, "md");
+        @include rounded(3rem);
+    }
+
+    .lgbg{
+        height: 3rem;
+        width: 7.5rem;
+        background: map.get($colors, "lg");
+        font-size: map.get($sizes, "lg");
+        @include rounded(4rem);
+    }
+
+    .noti{
+        background: map.get($colors, "noti");
+        font-size: map.get($sizes, "md");
+    }
+
+    .count{
+        background: map.get($colors, "lg");
+        @include rounded(30%);
+    }
+}
